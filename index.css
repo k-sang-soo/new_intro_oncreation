@@ -70,25 +70,38 @@ header .nav {
   opacity: 0;
   transform: translateY(-30px);
   animation: order4-nav 500ms linear forwards;
-  animation-delay: 8700ms;
+  animation-delay: 6600ms;
 }
 
 header .nav li {
-  margin-right: 65px;
+  margin-right: 57px;
 }
 
 header .nav li:last-child {
-  font-size: 12px;
+  font-size: 13px;
+}
+
+header .nav a {
+  padding: 8px 12px;
+}
+
+header .nav a:hover {
+  color: var(--logo-green);
+}
+
+.main {
+  width: 737px;
+  margin: 0 auto;
 }
 
 .main .main-logo {
-  width: 540px;
+  width: 73%;
   margin: 0 auto;
   padding-bottom: 28px;
   opacity: 0;
   transform: translateY(30px);
   animation: order3-logo 500ms linear forwards;
-  animation-delay: 8300ms;
+  animation-delay: 6000ms;
 }
 
 .main .main-logo img {
@@ -96,12 +109,11 @@ header .nav li:last-child {
 }
 
 .main .ideology {
+  display: inline-block;
   font-size: 22px;
   font-weight: var(--font-regular);
   text-align: center;
   padding-top: 28px;
-  margin: 0 auto;
-  max-width: min-content;
   margin-bottom: 30px;
 }
 
@@ -116,73 +128,73 @@ header .nav li:last-child {
 }
 
 .main .ideology .text-a {
-  animation: texts 500ms linear forwards;
+  animation: texts 300ms linear forwards;
 }
 .main .ideology .text-b {
-  animation: texts 700ms linear forwards;
-  animation-delay: 550ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 350ms;
 }
 .main .ideology .text-c {
-  animation: texts 700ms linear forwards;
-  animation-delay: 1050ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 700ms;
 }
 .main .ideology .text-d {
-  animation: texts 700ms linear forwards;
-  animation-delay: 1550ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 1050ms;
 }
 .main .ideology .text-e {
-  animation: texts 700ms linear forwards;
-  animation-delay: 2050ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 1400ms;
 }
 .main .ideology .text-f {
-  animation: texts 700ms linear forwards;
-  animation-delay: 2550ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 1750ms;
 }
 .main .ideology .text-g {
-  animation: texts 700ms linear forwards;
-  animation-delay: 3050ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 2100ms;
 }
 .main .ideology .text-i {
-  animation: texts 700ms linear forwards;
-  animation-delay: 3550ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 2450ms;
 }
 .main .ideology .text-m {
-  animation: texts 700ms linear forwards;
-  animation-delay: 4050ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 2800ms;
 }
 .main .ideology .text-n {
-  animation: texts 700ms linear forwards;
-  animation-delay: 4550ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 3150ms;
 }
 .main .ideology .text-o {
-  animation: texts 700ms linear forwards;
-  animation-delay: 5050ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 3500ms;
 }
 .main .ideology .text-r {
-  animation: texts 700ms linear forwards;
-  animation-delay: 5550ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 3850ms;
 }
 .main .ideology .text-s {
-  animation: texts 700ms linear forwards;
-  animation-delay: 6050ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 4200ms;
 }
 .main .ideology .text-t {
-  animation: texts 700ms linear forwards;
-  animation-delay: 6550ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 4550ms;
 }
 .main .ideology .text-v {
-  animation: texts 700ms linear forwards;
-  animation-delay: 7050ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 4900ms;
 }
 
 .main .ideology .text-comma {
-  animation: texts 700ms linear forwards;
-  animation-delay: 7100ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 5250ms;
 }
 
 .main .ideology .text-stop {
-  animation: texts 700ms linear forwards;
-  animation-delay: 7100ms;
+  animation: texts 300ms linear forwards;
+  animation-delay: 5250ms;
 }
 
 .main .ideology .ideology-green {
@@ -200,19 +212,24 @@ footer {
   opacity: 0;
   transform: translateY(30px);
   animation: order4-footer 500ms linear forwards;
-  animation-delay: 8700ms;
+  animation-delay: 6600ms;
 }
 
 footer .social li:nth-child(1) {
-  margin-bottom: 12px;
+  margin: 8px 12px;
 }
 
 footer .social li:nth-child(2) * {
-  margin-right: 58px;
+  margin-right: 46px;
+  padding: 8px 12px;
 }
 
 footer .social li:nth-child(2) .division {
   border-left: 1px solid var(--white);
+}
+
+footer .social li:nth-child(2) .fa-instagram {
+  margin-right: 0;
 }
 
 .mid-line {
@@ -225,7 +242,7 @@ footer .social li:nth-child(2) .division {
   height: 2px;
   background: var(--logo-green);
   animation: order2-mid-line 500ms linear forwards;
-  animation-delay: 7600ms;
+  animation-delay: 5600ms;
   z-index: 99;
 }
 
@@ -327,5 +344,50 @@ footer .social li:nth-child(2) .division {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .home-wrapper {
+    padding: 30px 65px 30px 65px;
+  }
+
+  header {
+    padding-right: 0px;
+    padding-left: 65px;
+  }
+
+  header .logo-svg {
+    width: 136px;
+  }
+
+  header .nav {
+    font-size: 16px;
+  }
+
+  header .nav li:last-child() {
+    font-size: 12px;
+  }
+
+  .main {
+    width: 504px;
+    margin: 0 auto;
+  }
+
+  .main .main-logo {
+    padding-bottom: 16px;
+  }
+
+  .main .main-logo img {
+    width: 100%;
+  }
+
+  .main .ideology {
+    font-size: 14px;
+    padding-top: 16px;
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
