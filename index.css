@@ -112,6 +112,7 @@ header .nav li:last-child {
 
 .main .ideology .ideology-typing span {
   opacity: 0;
+  letter-spacing: 1px;
 }
 
 .main .ideology .text-a {
@@ -174,6 +175,16 @@ header .nav li:last-child {
   animation-delay: 7050ms;
 }
 
+.main .ideology .text-comma {
+  animation: texts 700ms linear forwards;
+  animation-delay: 7100ms;
+}
+
+.main .ideology .text-stop {
+  animation: texts 700ms linear forwards;
+  animation-delay: 7100ms;
+}
+
 .main .ideology .ideology-green {
   color: var(--logo-green);
 }
@@ -214,7 +225,7 @@ footer .social li:nth-child(2) .division {
   height: 2px;
   background: var(--logo-green);
   animation: order2-mid-line 500ms linear forwards;
-  animation-delay: 7500ms;
+  animation-delay: 7600ms;
   z-index: 99;
 }
 
