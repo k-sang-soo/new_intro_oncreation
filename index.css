@@ -70,7 +70,7 @@ header .nav {
   opacity: 0;
   transform: translateY(-30px);
   animation: order4-nav 400ms linear forwards;
-  animation-delay: 2100ms;
+  animation-delay: 1500ms;
 }
 
 header .nav li {
@@ -105,7 +105,7 @@ header .nav a:hover {
   opacity: 0;
   transform: translateY(30px);
   animation: order3-logo 400ms linear forwards;
-  animation-delay: 2100ms;
+  animation-delay: 1500ms;
 }
 
 .main .main-logo img {
@@ -132,73 +132,73 @@ header .nav a:hover {
 }
 
 .main .ideology .text-a {
-  animation: texts 100ms linear forwards;
+  animation: texts 65ms linear forwards;
 }
 .main .ideology .text-b {
-  animation: texts 100ms linear forwards;
-  animation-delay: 100ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 65ms;
 }
 .main .ideology .text-c {
-  animation: texts 100ms linear forwards;
-  animation-delay: 200ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 130ms;
 }
 .main .ideology .text-d {
-  animation: texts 100ms linear forwards;
-  animation-delay: 300ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 195ms;
 }
 .main .ideology .text-e {
-  animation: texts 100ms linear forwards;
-  animation-delay: 400ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 260ms;
 }
 .main .ideology .text-f {
-  animation: texts 100ms linear forwards;
-  animation-delay: 500ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 325ms;
 }
 .main .ideology .text-g {
-  animation: texts 100ms linear forwards;
-  animation-delay: 600ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 390ms;
 }
 .main .ideology .text-i {
-  animation: texts 100ms linear forwards;
-  animation-delay: 700ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 455ms;
 }
 .main .ideology .text-m {
-  animation: texts 100ms linear forwards;
-  animation-delay: 800ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 520ms;
 }
 .main .ideology .text-n {
-  animation: texts 100ms linear forwards;
-  animation-delay: 900ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 585ms;
 }
 .main .ideology .text-o {
-  animation: texts 100ms linear forwards;
-  animation-delay: 1000ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 650ms;
 }
 .main .ideology .text-r {
-  animation: texts 100ms linear forwards;
-  animation-delay: 1100ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 715ms;
 }
 .main .ideology .text-s {
-  animation: texts 100ms linear forwards;
-  animation-delay: 1200ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 780ms;
 }
 .main .ideology .text-t {
-  animation: texts 100ms linear forwards;
-  animation-delay: 1300ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 845ms;
 }
 .main .ideology .text-v {
-  animation: texts 100ms linear forwards;
-  animation-delay: 1400ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 910ms;
 }
 
 .main .ideology .text-comma {
-  animation: texts 100ms linear forwards;
-  animation-delay: 1500ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 975ms;
 }
 
 .main .ideology .text-stop {
-  animation: texts 100ms linear forwards;
-  animation-delay: 1500ms;
+  animation: texts 65ms linear forwards;
+  animation-delay: 975ms;
 }
 
 .main .ideology .ideology-green {
@@ -246,7 +246,7 @@ footer .social li:nth-child(2) .fa-instagram {
   height: 2px;
   background: var(--logo-green);
   animation: order2-mid-line 400ms linear forwards;
-  animation-delay: 1700ms;
+  animation-delay: 1100ms;
   z-index: 99;
 }
 
@@ -274,25 +274,31 @@ footer .social li:nth-child(2) .fa-instagram {
 }
 
 .work-wrapper {
-  position: relative;
-  height: 100vh;
+  max-height: 110vh;
   overflow: hidden;
-  pointer-events: none;
+  /*pointer-events: none; */
 }
 
 .work-wrapper .slide {
   width: 100%;
+  height: 100%;
 }
 
 .work-wrapper .slide-item {
+  /* position: relative;
+  height: 100%;
+  width: 100%; */
+
   position: relative;
+  padding-top: 56.25%; /* 1:1 ratio */
+  overflow: hidden;
 }
 
 .work-wrapper .work-title {
   color: var(--white);
   font-weight: var(--font-medium);
   position: absolute;
-  top: 30%;
+  top: 1.5%;
   left: 156px;
   font-size: 68px;
   line-height: 1.2;
@@ -300,7 +306,21 @@ footer .social li:nth-child(2) .fa-instagram {
 }
 
 .work-wrapper .slide img {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.work-wrapper .slide .slide-item-img {
+  width: 1920px;
+  height: 1080px;
+  background: url("img/Work-visual_directing3.png");
+  background-size: cover;
+  background-position: center bottom;
 }
 
 .contact-wrapper {
