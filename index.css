@@ -93,6 +93,10 @@ header .nav a:hover {
   color: var(--logo-green);
 }
 
+header .mobile-nav-icon {
+  display: none;
+}
+
 .main {
   width: 737px;
   margin: 0 auto;
@@ -209,33 +213,6 @@ header .nav a:hover {
   color: var(--logo-coral);
 }
 
-footer {
-  position: absolute;
-  bottom: 30px;
-  font-size: 16px;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: order4-footer 500ms linear forwards;
-  animation-delay: 6600ms;
-}
-
-footer .social li:nth-child(1) {
-  margin: 8px 12px;
-}
-
-footer .social li:nth-child(2) * {
-  margin-right: 46px;
-  padding: 8px 12px;
-}
-
-footer .social li:nth-child(2) .division {
-  border-left: 1px solid var(--white);
-}
-
-footer .social li:nth-child(2) .fa-instagram {
-  margin-right: 0;
-}
-
 .mid-line {
   position: absolute;
   width: 0;
@@ -327,22 +304,6 @@ footer .social li:nth-child(2) .fa-instagram {
   height: 100vh;
 }
 
-/* @keyframes order1-typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    border-color: var(--white);
-  }
-  50% {
-    border-color: transparent;
-  }
-} */
-
 @keyframes texts {
   100% {
     opacity: 1;
@@ -369,13 +330,7 @@ footer .social li:nth-child(2) .fa-instagram {
   }
 }
 
-@keyframes order4-footer {
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
+/*********************************** 1280px 반응형 *************************************************************/
 @media screen and (max-width: 1280px) {
   .home-wrapper {
     padding: 30px 65px 30px 65px;
@@ -418,5 +373,71 @@ footer .social li:nth-child(2) .fa-instagram {
 
   footer {
     font-size: 14px;
+  }
+}
+
+/*********************************** 800px 반응형 *************************************************************/
+
+@media screen and (max-width: 800px) {
+  .home-wrapper {
+    padding: 24px;
+  }
+
+  header {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  header .nav {
+    font-size: 13px;
+  }
+
+  header .nav li {
+    margin-right: 16px;
+  }
+}
+
+/*********************************** 580px 반응형 *************************************************************/
+
+@media screen and (max-width: 580px) {
+  .home-wrapper {
+    padding: 20px;
+  }
+
+  header {
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 50px;
+    align-items: center;
+  }
+
+  header .mobile-nav-icon {
+    display: block;
+  }
+
+  header .mobile-nav-icon div {
+    width: 22px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 3px;
+  }
+
+  header .nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    font-size: 18px;
+    text-align: right;
+  }
+
+  header .nav li {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .main .ideology {
+    font-size: 10px;
   }
 }
