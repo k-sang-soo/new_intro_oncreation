@@ -2,6 +2,9 @@ window.addEventListener("load", () => {
   const midLine = document.querySelector(".mid-line");
   const logoSvg = document.querySelector(".logo-svg");
   const header = document.querySelector(".header");
+  const menu = document.querySelector(".mobile-nav-icon");
+  const menuList = document.querySelector(".nav");
+  const menuAni = document.querySelectorAll(".mobile-nav-icon div");
   let midLineOffTop = midLine.offsetTop;
   let midLinedefaultTop = 50;
   let headerHeight = header.offsetHeight;
@@ -33,6 +36,11 @@ window.addEventListener("load", () => {
   });
 
   window.addEventListener("scroll", scrollIndicator);
+
+  menu.addEventListener("click", () => {
+    menuList.classList.toggle("menu-view");
+    menuAni[1].classList.toggle("mobile-nav-icon");
+  });
 
   $(".slide").slick({
     slide: "div", //슬라이드 되어야 할 태그 ex) div, li
