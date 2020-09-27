@@ -100,6 +100,7 @@ header .mobile-nav-icon {
 header .nav.menu-view {
   display: block;
   opacity: 1;
+  top: 60px;
   transform: translateY(0);
 }
 
@@ -423,7 +424,7 @@ header .nav.menu-view a {
   }
 
   header {
-    padding-right: 8px;
+    padding-right: 0;
     padding-left: 20px;
     height: 50px;
     align-items: center;
@@ -440,11 +441,20 @@ header .nav.menu-view a {
     border-radius: 10px;
     background-color: #f9f9f9;
     margin-bottom: 3px;
+    transition: 500ms;
   }
 
-  /* header .mobile-nav-icon .mid.nav-view-ani {
-    background: #ff0000;
-  } */
+  header .mobile-nav-icon .top.click-ani {
+    transform: rotate(45deg) translate(5%, 140%);
+  }
+
+  header .mobile-nav-icon .mid.click-ani {
+    width: 0px;
+  }
+
+  header .mobile-nav-icon .bottom.click-ani {
+    transform: rotate(-45deg) translate(20%, -240%);
+  }
 
   header .nav {
     display: none;

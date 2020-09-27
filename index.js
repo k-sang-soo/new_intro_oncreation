@@ -39,7 +39,9 @@ window.addEventListener("load", () => {
 
   menu.addEventListener("click", () => {
     menuList.classList.toggle("menu-view");
-    menuAni[1].classList.toggle("mobile-nav-icon");
+    menuAni[0].classList.toggle("click-ani");
+    menuAni[1].classList.toggle("click-ani");
+    menuAni[2].classList.toggle("click-ani");
   });
 
   $(".slide").slick({
