@@ -130,7 +130,6 @@ header .nav.menu-view a {
 }
 
 .main .ideology {
-  display: inline-block;
   font-size: 22px;
   font-weight: var(--font-regular);
   text-align: center;
@@ -266,6 +265,7 @@ header .nav.menu-view a {
 }
 
 .about-wrapper article {
+  width: 1608px;
   display: flex;
   position: absolute;
   top: 50%;
@@ -274,20 +274,31 @@ header .nav.menu-view a {
 }
 
 .about-wrapper .about-title {
+  width: 1608px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   font-size: 41px;
   font-weight: var(--font-bold);
   letter-spacing: 2.5px;
-  margin-bottom: 86px;
+  padding-top: 86px;
 }
 
 .about-wrapper .about-img-box {
-  max-width: 656px;
-  max-height: 544px;
+  max-width: 41%;
   margin-right: 70px;
 }
 
+.about-wrapper .about-img-box img {
+  width: 100%;
+}
+
+.about-wrapper .about-introduce {
+  width: 55%;
+}
+
 .about-wrapper .about-introduce .introduce-img-box {
-  max-width: 200px;
+  max-width: 21.1%;
 }
 
 .about-wrapper .about-introduce .introduce-img-box img {
@@ -297,14 +308,14 @@ header .nav.menu-view a {
 .about-wrapper .about-introduce .introduce-title {
   font-size: 24px;
   font-weight: var(--font-medium);
-  margin-bottom: 36px;
+  margin-bottom: 1.5em;
 }
 
 .about-wrapper .about-introduce .introduce-main {
   font-size: 20px;
   font-weight: var(--font-light);
   line-height: 1.8;
-  margin-bottom: 46px;
+  margin-bottom: 2.33em;
   white-space: nowrap;
 }
 
@@ -313,6 +324,7 @@ header .nav.menu-view a {
   font-weight: var(--font-light);
   line-height: 1.8;
   color: var(--gray);
+  white-space: nowrap;
 }
 
 /******************** WORK-WRAPPER **********************/
@@ -403,8 +415,71 @@ header .nav.menu-view a {
   }
 }
 
-/*********************************** 1280px 반응형 *************************************************************/
-@media screen and (max-width: 1280px) {
+/*********************************** 1800px 반응형 *************************************************************/
+@media screen and (max-width: 1800px) {
+  .main .main-logo {
+    width: 65%;
+    padding-bottom: 20px;
+  }
+
+  .main .ideology {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .about-wrapper .about-title {
+    width: 1288px;
+    font-size: 38px;
+  }
+
+  .about-wrapper article {
+    width: 1288px;
+  }
+
+  .about-wrapper .about-introduce .introduce-title {
+    font-size: 20px;
+  }
+
+  .about-wrapper .about-introduce .introduce-main {
+    font-size: 17px;
+  }
+
+  .about-wrapper .about-introduce .introduce-work-list {
+    font-size: 15px;
+  }
+}
+
+/*********************************** 1540px 반응형 *************************************************************/
+@media screen and (max-width: 1540px) {
+  .about-wrapper {
+    padding: 0 65px;
+  }
+
+  .about-wrapper .about-title {
+    width: 1288px;
+    font-size: 34px;
+    padding-top: 151px;
+  }
+
+  .about-wrapper article {
+    width: 1288px;
+  }
+
+  .about-wrapper .about-introduce .introduce-title {
+    font-size: 20px;
+  }
+
+  .about-wrapper .about-introduce .introduce-main {
+    font-size: 17px;
+  }
+
+  .about-wrapper .about-introduce .introduce-work-list {
+    font-size: 16px;
+  }
+}
+
+/*********************************** 1440px 반응형 *************************************************************/
+@media screen and (max-width: 1440px) {
   .home-wrapper {
     padding: 30px 65px 30px 65px;
   }
@@ -414,6 +489,42 @@ header .nav.menu-view a {
     padding-left: 65px;
   }
 
+  .about-wrapper .about-title {
+    padding-top: 65px;
+  }
+
+  .about-wrapper .about-img-box {
+    max-width: 38%;
+  }
+
+  .about-wrapper .about-introduce .introduce-title {
+    font-size: 18px;
+  }
+
+  .about-wrapper .about-introduce .introduce-main {
+    font-size: 15px;
+  }
+
+  .about-wrapper .about-introduce .introduce-work-list {
+    font-size: 14px;
+  }
+}
+
+/*********************************** 1366px 반응형 *************************************************************/
+@media screen and (max-width: 1366px) {
+  .main .main-logo {
+    width: 60%;
+    padding-bottom: 17px;
+  }
+
+  .main .ideology {
+    font-size: 16px;
+    padding-top: 17px;
+  }
+}
+
+/*********************************** 1280px 반응형 *************************************************************/
+@media screen and (max-width: 1280px) {
   header .logo-svg {
     width: 136px;
   }
