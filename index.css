@@ -23,6 +23,7 @@ li {
   --logo-coral: #da6d75;
   --darkgray: #212121;
   --white: #f9f9f9;
+  --gray: #7c7d80;
   --font-light: 300;
   --font-regular: 400;
   --font-medium: 500;
@@ -257,10 +258,64 @@ header .nav.menu-view a {
   border-radius: 50%;
   background: var(--logo-coral);
 }
-
+/********************* ABOUT WRAPPER *********************/
 .about-wrapper {
   height: 100vh;
+  padding: 0 156px;
+  position: relative;
 }
+
+.about-wrapper article {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-wrapper .about-title {
+  font-size: 41px;
+  font-weight: var(--font-bold);
+  letter-spacing: 2.5px;
+  margin-bottom: 86px;
+}
+
+.about-wrapper .about-img-box {
+  max-width: 656px;
+  max-height: 544px;
+  margin-right: 70px;
+}
+
+.about-wrapper .about-introduce .introduce-img-box {
+  max-width: 200px;
+}
+
+.about-wrapper .about-introduce .introduce-img-box img {
+  width: 100%;
+}
+
+.about-wrapper .about-introduce .introduce-title {
+  font-size: 24px;
+  font-weight: var(--font-medium);
+  margin-bottom: 36px;
+}
+
+.about-wrapper .about-introduce .introduce-main {
+  font-size: 20px;
+  font-weight: var(--font-light);
+  line-height: 1.8;
+  margin-bottom: 46px;
+  white-space: nowrap;
+}
+
+.about-wrapper .about-introduce .introduce-work-list {
+  font-size: 19px;
+  font-weight: var(--font-light);
+  line-height: 1.8;
+  color: var(--gray);
+}
+
+/******************** WORK-WRAPPER **********************/
 
 .work-wrapper {
   max-height: 110vh;
