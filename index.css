@@ -643,6 +643,7 @@ header .nav.menu-view a {
   }
 
   .main .main-logo {
+    transform: translateY(15px);
     padding-bottom: 6px;
   }
 
